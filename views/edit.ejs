@@ -1,0 +1,69 @@
+<%- include layouts/header.ejs %>
+
+<div class="container">
+	<form method="POST" class="form-group" action="/edit/<%= data[0].id %>">
+		<div class="form-group">
+			<input 
+				type="text" 
+				class="form-control" 
+				name="name" 
+				placeholder="name" 
+				value="<%= data[0].name %>"
+			>
+		</div>
+		<div class="form-group">
+			<input 
+				type="text" 
+				name="surname" 
+				class="form-control" 
+				placeholder="surname" 
+				value="<%= data[0].surname %>"
+			>
+		</div>
+		<div class="form-group">
+			<input 
+				type="text" 
+				name="age" 
+				class="form-control" 
+				placeholder="age" 
+				value="<%= data[0].age %>"
+		>
+		</div>
+		<div class="form-group">
+			<input 
+				type="text" 
+				name="location" 
+				class="form-control" 
+				placeholder="location" 
+				value="<%= data[0].location %>"
+		>
+		</div>
+		<div class="form-group">
+			<input 
+				type="text" 
+				name="height" 
+				class="form-control" 
+				placeholder="height" 
+				value="<%= data[0].height %>"
+		>
+		</div>
+		<div class="form-group">
+			<input 
+				type="text" 
+				name="weight" 
+				class="form-control" 
+				placeholder="weight" 
+				value="<%= data[0].weight %>"
+		>
+		</div>
+		<div class="form-group">
+			<input 
+				type="submit" 
+				class="btn btn-success form-control" 
+				value="Сохранить изменения"
+			>
+		</div>
+	</form>
+</div>
+
+<%- include layouts/footer.ejs %>
