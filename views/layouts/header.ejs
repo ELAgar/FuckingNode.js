@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <title><%= title %></title>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="/public/style.css">
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container">
+	<h1 class="title"><%= title %></h1>
+	<header>
+		<nav>
+			<ul>
+				<li><a href="/" class="btn btn-danger">Домашняя</a></li>
+				<li><a href="/users" class="btn btn-danger">Пользователи</a></li>
+				<li><a href="/about" class="btn btn-danger">О нас</a></li>
+				<li><a href="/contacts" class="btn btn-danger">Контакты</a></li>
+			</ul>
+		</nav>
+		<a href="/create_user" class="create" >[<b style="font-size: 20px">+</b>Добавить пользователя]</a>	
+	</header>
+</div>
